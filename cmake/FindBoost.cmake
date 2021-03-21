@@ -3,11 +3,13 @@ include(${CMAKE_CURRENT_LIST_DIR}/cmodule.cmake)
 # cpp-pm archive is smaller (no documentation, tests, etc.)
 
 cmodule_add(
-  boost 1.72.0
+  boost 1.75.0
 # URL      https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.7z
 # URL_HASH SHA256=247a91dd7e4d9dd3c4b954b532fbc167ba62dc15ab834e5ad893d7c3f9eb5f0f
-  URL      "https://github.com/cpp-pm/boost/archive/v1.72.0-p0.tar.gz"
-  URL_HASH SHA256=5ef7cbf74f02d2bde5b80fce1ec05b6894492a2e47dc235580302fdc63c7afee
+#  URL      "https://github.com/cpp-pm/boost/archive/v1.72.0-p0.tar.gz"
+#  URL_HASH SHA256=5ef7cbf74f02d2bde5b80fce1ec05b6894492a2e47dc235580302fdc63c7afee
+  URL 	   "https://dl.bintray.com/boostorg/release/1.75.0/source/boost_1_75_0.tar.gz"
+  URL_HASH SHA256=aeb26f80e80945e82ee93e5939baebdca47b9dee80a07d3144be1e1a6a66dd6a
 )
 
 set(BOOST_SOURCE "${CMODULE_boost_SOURCE_DIR}")
